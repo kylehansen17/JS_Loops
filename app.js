@@ -8,14 +8,17 @@
 // for (let i = 1; i <= 10; i++) {
 //     console.log(i);
 // }
+// Prints out 1-10 on separate lines
 
 // for (let i = 2; i <= 20; i += 2) {
 //     console.log(i);
 // }
+// Prints out even numbers on separate lines
 
 // for (let i = 100; i >= 0; i -= 10) {
 //     console.log(i);
 // }
+// Count down from 100 by 10
 
 
 // Pretending there is an animal array with 200+ animals
@@ -61,6 +64,21 @@
 //         console.log(row[j]);
 //     }
 // }
+// OUTPUT
+// ROW #1
+// Kristen
+// Erik
+// Namita
+// ROW #2
+// Geoffrey
+// Juanita
+// Anotonio
+// Kevin
+// ROW #3
+// Yuma
+// Sakura
+// Jack
+// Erika
 
 // for (let row of seatingChart) {
 //     for (let student of row) {
@@ -74,6 +92,7 @@
 //     count++;
 //     console.log(count)
 // }
+// Prints 1-10 on separate lines
 
 
 // const SECRET = "BabyHippo";
