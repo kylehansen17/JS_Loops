@@ -64,6 +64,12 @@
 //         console.log(row[j]);
 //     }
 // }
+// Same thing but using For Of
+// for (let row of seatingChart) {
+//     for (let student of row) {
+//         console.log(student);
+//     }
+// }
 // OUTPUT
 // ROW #1
 // Kristen
@@ -79,12 +85,6 @@
 // Sakura
 // Jack
 // Erika
-
-// for (let row of seatingChart) {
-//     for (let student of row) {
-//         console.log(student);
-//     }
-// }
 
 
 // let count = 0;
@@ -141,7 +141,66 @@
 // }
 
 
+// For Of Loop
 const subreddits = ['cringe', 'books', 'chickens', 'funny'];
+for (let i = 0; i < subreddits.length; i++) {
+    console.log(`Visit reddit.com/r/${subreddits[i]}`);
+}
+// Same thing but with For Of
 for (let sub of subreddits) {
     console.log(`Visit reddit.com/r/${sub}`);
 }
+
+
+for (let char of "hello world") {
+    console.log(char);
+}
+// OUTPUT
+// h
+// e
+// l
+// l
+// o
+// 
+// w
+// o
+// r
+// l
+// d
+
+
+// Iterating Over Objects
+const testScores = {
+    keenan: 80,
+    damon: 67,
+    kim: 89
+}
+
+for (let person in testScores) {
+    console.log(`${person} scored ${testScores[person]}`);
+}
+// Output
+// keenan scored 80
+// damon scored 67
+// kim scored 89
+
+// Makes an array out of the object values so you can use For Of instead of For In
+Object.values
+Object.keys
+Object.entries
+
+for (let score of Object.values(testScores)) {
+    console.log(score);
+}
+// Output
+// 80
+// 67
+// 89
+
+// Finding the average of scores
+let total = 0;
+let scores = Object.values(testScores);
+for (let score of scores) {
+    total += score;
+}
+console.log(total / scores.length)
